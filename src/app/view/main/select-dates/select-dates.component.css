@@ -1,0 +1,16 @@
+:host ::ng-deep .ant-tabs-tabpane {
+    padding: 24px;
+    overflow: auto;
+}
+h2{
+    text-align: center;
+    color: #006994;
+}
+.color{
+    color: #006994;
+    font-weight: 600;
+}
+.gray-color{
+    color: gray;
+    font-size: 18px;
+}

@@ -1,0 +1,16 @@
+<nz-content>
+    <h2>
+        Select Dates
+    </h2>
+    <nz-range-picker nzInline [(ngModel)]="rangeDate" (ngModelChange)="onChange($event)"></nz-range-picker>
+    <div class="d-flex justify-content-evenly  mt-4">
+        <div class="color">Arrival
+            <div class="gray-color">{{start | date}}</div>
+        </div>
+
+        <div class="color">Departure
+            <div class="gray-color">{{end | date}}</div>
+        </div>
+
+    </div>
+</nz-content>

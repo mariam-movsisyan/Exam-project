@@ -1,0 +1,39 @@
+<nz-content class="inner-content">
+    <div class="step">
+        <ul class="list">
+            <li class="items">
+                <div class="count div" routerLink="select-dates" routerLinkActive="active">1</div>
+                <p class="text">Select Dates</p>
+            </li>
+            <li class="items">
+                <div class="count"routerLink="personal-details" routerLinkActive="active">2</div>
+                <p class="text">Personal Details</p>
+            </li>
+            <li class="items">
+                <div class="count" routerLink="guests" routerLinkActive="active">3</div>
+                <p class="text">Guests</p>
+            </li>
+            <li class="items">
+                <div class="count" routerLink="booking" routerLinkActive="active">4</div>
+                <p class="text">Booking Review</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="d-flex justify-content-between mt-5">
+        <div>
+            <button nz-button nzType="primary" (click)="goPreviousPage()">
+                Previous
+            </button>
+        </div>
+        <div>
+            <button nz-button nzType="primary" (click)="goNextPage()">
+                Next
+            </button>
+        </div>
+    </div>
+
+</nz-content>
